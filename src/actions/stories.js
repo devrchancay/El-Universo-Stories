@@ -1,0 +1,3 @@
+export const LOAD_STORIES = 'LOAD_STORIES';
+export const SET_SECTION = 'SET_SECTION';
+export const CHANGE_VISIBILITY = 'CHANGE_VISIBILITY';

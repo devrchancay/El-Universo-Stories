@@ -4,16 +4,32 @@ import { Provider } from 'react-redux';
 
 import 'babel-polyfill';
 
-import './styles/index.css';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
 import store from './store';
 
+require('./styles/app.css');
+
+const rootEl = document.getElementById('root');
+
 render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.getElementById('root'),
+  rootEl,
 );
+
+if (module.hot) {
+  module.hot.accept('./components/App', () => {
+    const NextApp = require('./components/App').default;
+    render(
+      <Provider store={store}>
+        <NextApp />
+      </Provider>,
+      rootEl,
+    );
+  });
+}
+
 registerServiceWorker();

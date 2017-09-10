@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-const stories = {};
+import stories from './stories';
 
 const rootReducers = combineReducers({ stories });
 
