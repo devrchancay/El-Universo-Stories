@@ -17,7 +17,7 @@ class Index extends Component {
         <Story>
           <Header {...this.props} />
           <Navigation items={news} {...this.props} />
-          <Body report={news[0]} />
+          <Body report={this.props.stories.story} />
         </Story>
       </WrapperStory>
     );

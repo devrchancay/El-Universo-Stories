@@ -161,4 +161,5 @@ export const navigationItem = {
   margin: '0 .1rem',
   height: '65%',
   borderRadius: '10px',
+  overflow: 'hidden',
 };

@@ -15,11 +15,12 @@ const loultimo = {
         'http://www.eluniverso.com/noticias/2017/07/29/nota/6302704/centro-muishily-fomenta-cultura-tsachilas',
     },
     {
-      picture: '',
+      picture:
+        'http://www.eluniverso.com/sites/default/files/styles/nota_ampliada_normal_foto/public/fotos/2017/09/data19259461.jpg?itok=X4nAxTg5',
       topic: 'INTERCULTURAL',
-      timeago: 'Hace 35 min',
+      timeago: 'Hace 40 min',
       title: 'A través de la cascada’ se promociona Girón',
-      description: `A través de la cascada, Viaja a un mundo donde lo fantástico es posible es el nombre del proyecto turístico-cultural que busca difundir las bondades naturales del cantón Girón, en el suroeste de la provincia del Azuay.`,
+      description: `A través de la cascada, Viaja a un mundo donde lo fantástico es posible es el nombre del proyecto turístico-cultural que busca difundir`,
       url:
         'http://www.eluniverso.com/noticias/2017/09/10/nota/6372661/traves-cascada-se-promociona-giron',
     },

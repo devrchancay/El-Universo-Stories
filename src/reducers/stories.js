@@ -1,4 +1,4 @@
-import { SET_SECTION, CHANGE_VISIBILITY } from '../actions/stories';
+import { SET_SECTION, CHANGE_VISIBILITY, SET_STORY } from '../actions/stories';
 
 const stories = (state = {}, action) => {
   switch (action.type) {
@@ -9,6 +9,10 @@ const stories = (state = {}, action) => {
     case CHANGE_VISIBILITY:
       return Object.assign({}, state, {
         visibility: action.visibility,
+      });
+    case SET_STORY:
+      return Object.assign({}, state, {
+        story: { ...state.current.news[action.id], id: action.id },
       });
     default:
       return state;
