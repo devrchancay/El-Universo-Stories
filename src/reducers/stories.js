@@ -12,7 +12,7 @@ const stories = (state = {}, action) => {
       });
     case SET_STORY:
       return Object.assign({}, state, {
-        story: { ...state.current.news[action.id], id: action.id },
+        story: { ...state.current.news.find(story => story.id === action.id) },
       });
     default:
       return state;

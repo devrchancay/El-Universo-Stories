@@ -7,7 +7,6 @@ class Main extends Component {
     e.preventDefault();
     const section = e.target.getAttribute('data-section');
     this.props.setSection(section);
-    this.props.setStory(0);
     this.props.changeVisibility(true);
   }
 

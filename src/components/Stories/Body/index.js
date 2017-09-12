@@ -25,7 +25,7 @@ const BodyAction = glamorous.div(bodyAction);
 const BodyLink = glamorous.a(bodyLink);
 
 class Body extends Component {
-  render() {
+  renderBody() {
     const {
       picture,
       topic,
@@ -52,6 +52,10 @@ class Body extends Component {
         </BodyAction>
       </div>
     );
+  }
+
+  render() {
+    return this.props.report ? this.renderBody() : <span />;
   }
 }
 
