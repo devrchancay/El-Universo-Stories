@@ -51,6 +51,14 @@ class Navigation extends Component {
     this.storiesProgress(firstStory);
   }
 
+  componentWillUnmount() {
+    const { news } = this.props.stories.current;
+    this.props.setStory(news[0].id);
+    news.forEach(report => {
+      this.lines[report.id].destroy();
+    }, this);
+  }
+
   render() {
     const { news } = this.props.stories.current;
     return (
