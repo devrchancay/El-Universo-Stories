@@ -5,9 +5,9 @@ import { navigationWrapper, navigationItem } from '../../../styles/stories';
 
 const lineConfig = {
   strokeWidth: 20,
-  easing: 'easeInOut',
+  easing: 'easeIn',
   color: '#FFFFFF',
-  duration: 10000,
+  duration: 7000,
 };
 
 const NavigationWrapper = glamorous.div(navigationWrapper);
@@ -20,26 +20,6 @@ class Navigation extends Component {
     return new ProgressBar.Line(progressId, lineConfig);
   }
 
-  storiesProgress(id, first = true) {
-    const { news } = this.props.stories.current;
-    const currentID = news.findIndex(report => report.id === id);
-    const nextStory = news[currentID + 1];
-    if (first) {
-      this.props.setStory(id);
-    }
-
-    this.lines[id].animate(1, () => {
-      if (nextStory) {
-        this.storiesProgress(nextStory.id);
-        if (!first) {
-          this.props.setStory(id);
-        }
-      } else {
-        this.props.changeVisibility(false);
-      }
-    });
-  }
-
   componentDidMount() {
     const { news } = this.props.stories.current;
     const firstStory = news[0].id;
@@ -47,8 +27,8 @@ class Navigation extends Component {
       prev[next.id] = this.initProgress(next.id);
       return prev;
     }, {});
-
-    this.storiesProgress(firstStory);
+    window.lines = this.lines;
+    this.props.storiesProgress(firstStory);
   }
 
   componentWillUnmount() {

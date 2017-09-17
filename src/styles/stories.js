@@ -45,7 +45,7 @@ export const avatarImage = {
 };
 
 export const storyInformation = {
-  width: '50%',
+  width: '55%',
   display: 'flex',
   flexDirection: 'column',
   alignContent: 'center',
@@ -65,6 +65,7 @@ export const storyDate = {
   margin: 0,
   fontWeight: 300,
   color: dateText,
+  fontSize: '.8rem',
 };
 
 export const storyAction = {
@@ -73,6 +74,7 @@ export const storyAction = {
   justifyContent: 'flex-end',
   alignContent: 'center',
   alignItems: 'center',
+  paddingRight: '.5rem',
 };
 
 export const storyClose = {
@@ -97,12 +99,14 @@ export const bodyDetails = {
   padding: '.5rem',
   display: 'flex',
   height: '3vh',
+  alignItems: 'center',
 };
 
 export const bodyTopic = {
   margin: '0 .5rem 0 0 ',
   color: 'white',
   fontWeight: 300,
+  fontSize: '.7rem',
 };
 
 export const bodyTimeago = {
@@ -162,4 +166,24 @@ export const navigationItem = {
   height: '65%',
   borderRadius: '10px',
   overflow: 'hidden',
+};
+
+export const gestureContainer = {
+  position: 'absolute',
+  width: '100%',
+  height: '63vh',
+  zIndex: 2147483647,
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+};
+
+export const leftControl = {
+  width: '20%',
+};
+export const centerPress = {
+  width: '80%',
+};
+export const rightControl = {
+  width: '20%',
 };
