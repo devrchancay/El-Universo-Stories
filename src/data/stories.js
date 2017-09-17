@@ -71,7 +71,7 @@ const deportes = {
     {
       id: '7173dfa4-ded6-4855-8d22-81f0c76c41c0',
       picture:
-        'https://static.iris.net.co/semana/upload/images/2017/7/27/534005_1.jpg',
+        'https://www.las2orillas.co/wp-content/uploads/2017/07/avianca.jpeg',
       topic: 'PATROCINADO',
       timeago: '',
       title:
@@ -94,6 +94,40 @@ const deportes = {
   ],
 };
 
-const stories = { all: [loultimo, deportes], visibility: false };
+const politica = {
+  name: 'politica',
+  label: 'Política',
+  date: '17 DE SEPTIEMBRE 2017',
+  avatar: 'http://www.eluniverso.com/files/liveblog/avatar.png',
+  news: [
+    {
+      id: '0d2a1646-86c4-4b54-9ea6-4dbc354e79bd',
+      picture:
+        'http://www.eluniverso.com/sites/default/files/styles/nota_ampliada_normal_foto/public/fotos/2017/09/ffffffffff.jpg?itok=HSoWBm5Z',
+      topic: 'POLÍTICA',
+      timeago: 'Hace 15 min',
+      title:
+        'Ricardo Rivera se pronuncia sobre video que circula en redes sociales',
+      description:
+        'Ricardo Rivera Aráuz, tío del vicepresidente Jorge Glas y procesado por asociación ilícita vinculado en el caso Odebrecht',
+      url:
+        'http://www.eluniverso.com/noticias/2017/09/17/nota/6387166/ricardo-rivera-se-pronuncia-sobre-video-que-circula-redes-sociales',
+    },
+    {
+      id: 'a51244ed-cfdd-4329-af29-1f51ce2c2f2d',
+      picture:
+        'http://www.eluniverso.com/sites/default/files/styles/nota_ampliada_normal_foto/public/fotos/2017/09/10284492.jpg?itok=88oHxQJO',
+      topic: 'POLÍTICA',
+      timeago: 'Hace 25 min',
+      title: 'Promesas, contratos y edificios ‘fantasmas’ enredan a Yachay EP',
+      description:
+        'En el último piso de un edificio de cinco plantas, una mujer hace un trabajo interminable: barre el polvo varias veces al día',
+      url:
+        'http://www.eluniverso.com/noticias/2017/09/17/nota/6384565/promesas-contratos-edificios-fantasmas-enredan-yachay-ep',
+    },
+  ],
+};
+
+const stories = { all: [loultimo, deportes, politica], visibility: false };
 
 export default stories;

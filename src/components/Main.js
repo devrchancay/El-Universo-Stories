@@ -13,20 +13,32 @@ class Main extends Component {
   render() {
     const { all } = this.props.stories;
     return (
-      <div className="App">
-        <ul>
-          <li>
-            {all.map((story, id) => (
+      <div>
+        <ul
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            listStyle: 'none',
+            margin: 0,
+            padding: 0,
+          }}
+        >
+          {all.map((story, id) => (
+            <li
+              key={id}
+              style={{
+                margin: '1rem',
+              }}
+            >
               <a
-                key={id}
                 data-section={story.name}
                 href={story.name}
                 onClick={this.setSection.bind(this)}
               >
                 {story.label}
               </a>
-            ))}
-          </li>
+            </li>
+          ))}
         </ul>
         {this.props.stories.visibility ? <Stories {...this.props} /> : <span />}
       </div>
