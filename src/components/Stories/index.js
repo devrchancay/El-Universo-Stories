@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import glamorous from 'glamorous';
 
 import Hammer from 'rc-hammerjs';
-import Header from './header';
+import Header from './Header';
 import Body from './Body';
 import Navigation from './Body/Navigation';
 import {

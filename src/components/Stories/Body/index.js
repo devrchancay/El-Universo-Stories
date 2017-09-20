@@ -12,8 +12,10 @@ import {
   bodyDescription,
   bodyAction,
   bodyLink,
+  pictureContainer,
 } from '../../../styles/stories';
 
+const PictureContainer = glamorous.div(pictureContainer);
 const BodyDetails = glamorous.div(bodyDetails);
 const BodyTopic = glamorous.h5(bodyTopic);
 const BodyTimeago = glamorous.h5(bodyTimeago);
@@ -36,7 +38,9 @@ class Body extends Component {
     } = this.props.report;
     return (
       <div>
-        <Picture img={picture} />
+        <PictureContainer>
+          <Picture img={picture} />
+        </PictureContainer>
         <BodyDetails>
           <BodyTopic>{topic}</BodyTopic>
           <BodyTimeago>{timeago}</BodyTimeago>

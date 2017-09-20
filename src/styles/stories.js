@@ -31,6 +31,7 @@ export const storyHeader = {
   height: '10vh',
   padding: '.5rem .5rem',
   display: 'flex',
+  background: primaryBackground,
 };
 
 export const avatarFigure = {
@@ -75,6 +76,8 @@ export const storyAction = {
   alignContent: 'center',
   alignItems: 'center',
   paddingRight: '.5rem',
+  background: primaryBackground,
+  height: '10vh',
 };
 
 export const storyClose = {
@@ -83,12 +86,15 @@ export const storyClose = {
   fontWeight: 300,
 };
 
+export const pictureContainer = {
+  height: '30vh',
+};
 export const pictureFigure = {
   position: 'relative',
   margin: 0,
   display: 'flex',
   justifyContent: 'center',
-  height: '30vh',
+  height: '100%',
 };
 
 export const pictureImg = {
