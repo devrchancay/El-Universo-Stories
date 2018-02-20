@@ -3,7 +3,7 @@ import glamorous from 'glamorous';
 
 import { storyAction, storyClose } from '../../../styles/stories';
 
-const close = require('./close.svg');
+import close from './cancel.svg';
 
 const StoryAction = glamorous.div(storyAction);
 const StoryClose = glamorous.a(storyClose);
@@ -17,11 +17,7 @@ class Actions extends Component {
     return (
       <StoryAction>
         <StoryClose onClick={this.hideStory.bind(this)}>
-          <img
-            src={close}
-            alt="x"
-            style={{ width: '100px', height: '100px' }}
-          />
+          <img src={close} alt="x" style={{ width: '25px', height: '25px' }} />
         </StoryClose>
       </StoryAction>
     );

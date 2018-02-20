@@ -19,11 +19,10 @@ export const wrapperStory = {
 };
 
 export const stories = {
-  width: '97vw',
+  width: '100vw',
   position: 'absolute',
   background: primaryBackground,
-  minHeight: '87vh',
-  borderRadius: '10px',
+  minHeight: '100vh',
 };
 
 export const storyHeader = {
